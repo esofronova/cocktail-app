@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/cocktail-app/static/css/main.df5caa11.chunk.css",
+    "main.js": "/cocktail-app/static/js/main.6464db96.chunk.js",
+    "main.js.map": "/cocktail-app/static/js/main.6464db96.chunk.js.map",
+    "runtime-main.js": "/cocktail-app/static/js/runtime-main.ed2442bb.js",
+    "runtime-main.js.map": "/cocktail-app/static/js/runtime-main.ed2442bb.js.map",
+    "static/css/2.f2512455.chunk.css": "/cocktail-app/static/css/2.f2512455.chunk.css",
+    "static/js/2.1e01d83c.chunk.js": "/cocktail-app/static/js/2.1e01d83c.chunk.js",
+    "static/js/2.1e01d83c.chunk.js.map": "/cocktail-app/static/js/2.1e01d83c.chunk.js.map",
+    "index.html": "/cocktail-app/index.html",
+    "static/css/2.f2512455.chunk.css.map": "/cocktail-app/static/css/2.f2512455.chunk.css.map",
+    "static/css/main.df5caa11.chunk.css.map": "/cocktail-app/static/css/main.df5caa11.chunk.css.map",
+    "static/js/2.1e01d83c.chunk.js.LICENSE.txt": "/cocktail-app/static/js/2.1e01d83c.chunk.js.LICENSE.txt",
+    "static/media/style.scss": "/cocktail-app/static/media/bg.c8e9d0d8.jpg",
+    "static/media/bloody-mary.a16bc710.jpg": "/cocktail-app/static/media/bloody-mary.a16bc710.jpg",
+    "static/media/daiquiri.b46fd7d4.jpg": "/cocktail-app/static/media/daiquiri.b46fd7d4.jpg",
+    "static/media/dry-martini.e54695c6.jpg": "/cocktail-app/static/media/dry-martini.e54695c6.jpg",
+    "static/media/long-island.742c8afb.jpg": "/cocktail-app/static/media/long-island.742c8afb.jpg",
+    "static/media/margarita.4a3280f9.jpg": "/cocktail-app/static/media/margarita.4a3280f9.jpg",
+    "static/media/mojito.1709438f.jpg": "/cocktail-app/static/media/mojito.1709438f.jpg",
+    "static/media/negroni.e971a023.jpg": "/cocktail-app/static/media/negroni.e971a023.jpg",
+    "static/media/old-fashioned.0adf294d.jpg": "/cocktail-app/static/media/old-fashioned.0adf294d.jpg",
+    "static/media/whisky-sour.2cf0e231.jpg": "/cocktail-app/static/media/whisky-sour.2cf0e231.jpg",
+    "static/media/white-russian.543218d3.jpg": "/cocktail-app/static/media/white-russian.543218d3.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ed2442bb.js",
+    "static/css/2.f2512455.chunk.css",
+    "static/js/2.1e01d83c.chunk.js",
+    "static/css/main.df5caa11.chunk.css",
+    "static/js/main.6464db96.chunk.js"
+  ]
+}
