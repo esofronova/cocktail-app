@@ -1,0 +1,32 @@
+.cocktail-app {
+  background: url("./images/bg.jpg") no-repeat fixed;
+
+  .cocktail-form {
+    backdrop-filter: blur(3px);
+
+    .mix-drink { text-shadow: 4px -1px 8px red; }
+
+    // SCROLLBAR
+    ::-webkit-scrollbar { width: 7px; }
+    ::-webkit-scrollbar-track { background: #444; }
+    ::-webkit-scrollbar-thumb { background: #bbb; border-radius: 25px; }
+
+    .cocktails {
+      .cocktail-name {
+        top: 0;
+        left: 0;
+        z-index: 1;
+        cursor: pointer;
+
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.3);
+        }
+      }
+    }
+  }
+
+  .source, .source a {
+    color: #666;
+    font-size: 0.8rem;
+  }
+}
