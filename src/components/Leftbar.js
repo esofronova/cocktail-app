@@ -1,3 +1,6 @@
+import { cocktail, setCocktail, alc, setAlc } from "../App";
+import { alcohol, cocktails } from '../data/data';
+
 export default function Leftbar() {
 
   return (

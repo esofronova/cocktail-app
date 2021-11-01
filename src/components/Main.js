@@ -1,19 +1,7 @@
-import { alcohol, cocktails } from '../data/data';
-import { useState } from 'react';
+import { cocktail, setCocktail, setAlc, drinksByAlc } from "../App";
+import { cocktails } from '../data/data';
 
 export default function Main() {
-
-  let [cocktail, setCocktail] = useState('All');
-  let [alc, setAlc] = useState('All');
-
-  let drinksByAlc = alc === 'All' ? [...cocktails] : [];
-  cocktails.forEach((item) => {
-    item.ingredients.forEach((liquor) => {
-      if (liquor.name === alc) {
-        drinksByAlc.push(item);
-      };
-    });
-  });
 
   return (
     <div className="col-12 col-md-8 p-3">

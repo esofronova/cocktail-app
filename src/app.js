@@ -1,16 +1,17 @@
 import './style.scss';
 import Leftbar from './components/Leftbar';
 import Main from './components/Main';
-
-import { alcohol, cocktails } from './data/data';
+import { cocktails } from './data/data';
 import { useState } from 'react';
+
+export let cocktail, setCocktail, alc, setAlc, drinksByAlc;
 
 export default function CocktailApp() {
 
-  let [cocktail, setCocktail] = useState('All');
-  let [alc, setAlc] = useState('All');
+  [cocktail, setCocktail] = useState('All');
+  [alc, setAlc] = useState('All');
 
-  let drinksByAlc = alc === 'All' ? [...cocktails] : [];
+  drinksByAlc = alc === 'All' ? [...cocktails] : [];
   cocktails.forEach((item) => {
     item.ingredients.forEach((liquor) => {
       if (liquor.name === alc) {
@@ -25,7 +26,7 @@ export default function CocktailApp() {
         <div className="row border rounded p-3 my-3 text-white cocktail-form">
           <h3 className="fw-bold ms-3 text-white mix-drink">Mix Me a Drink!</h3>
           <Leftbar />
-          {/* <Main /> */}
+          <Main />
         </div>
       </div>
     </div>
