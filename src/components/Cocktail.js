@@ -4,7 +4,7 @@ import { cocktail } from "../App";
 export default function Cocktail() {
 
   return (
-    <div className="col-12 col-md-8 p-3 mt-3 mt-md-0">
+    <div className="col-12 col-md-8 p-3 mt-3 mt-md-0 h-50 h-md-100 overflow-auto">
       {cocktails.map((item, index) => {
         return (
           <div key={index} className={"mx-3 mx-md-0" + item.name + (item.name === cocktail ? "" : " d-none")}>

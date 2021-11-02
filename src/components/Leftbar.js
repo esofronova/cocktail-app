@@ -3,8 +3,10 @@ import { alcohol, cocktails } from '../data/data';
 
 export default function Leftbar() {
 
+  console.log(window.innerWidth);
+
   return (
-    <div className="col-12 col-md-4">
+    <div className="col-12 col-md-4 h-40 h-md-100">
       <div className="mx-3 mx-md-0 d-flex flex-column justify-content-between h-100">
         <form className="mt-3">
           <div className="mb-3">
