@@ -188,7 +188,7 @@ export const cocktails = [
         amount: '1.5 oz'
       },
       {
-        name: 'Dry Vermouth',
+        name: 'Martini',
         amount: '0.5 oz'
       },
       {

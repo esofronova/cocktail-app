@@ -1,8 +1,9 @@
 import './style.scss';
-import Leftbar from './components/Leftbar';
-import Main from './components/Main';
 import { cocktails } from './data/data';
 import { useState } from 'react';
+import Leftbar from './components/Leftbar';
+import AllCocktails from './components/AllCocktails';
+import Cocktail from './components/Cocktail';
 
 export let cocktail, setCocktail, alc, setAlc, drinksByAlc;
 
@@ -10,6 +11,8 @@ export default function CocktailApp() {
 
   [cocktail, setCocktail] = useState('All');
   [alc, setAlc] = useState('All');
+
+  console.log(cocktail);
 
   drinksByAlc = alc === 'All' ? [...cocktails] : [];
   cocktails.forEach((item) => {
@@ -21,12 +24,21 @@ export default function CocktailApp() {
   });
 
   return (
-    <div className="cocktail-app bg-cover py-5 h-100 overflow-hidden">
+    <div className="cocktail-app bg-cover py-5">
       <div className="container">
         <div className="row border rounded p-3 my-3 text-white cocktail-form">
-          <h3 className="fw-bold ms-3 text-white mix-drink">Mix Me a Drink!</h3>
+          <div className="d-flex justify-content-between">
+            <h3 className="fw-bold ms-3 text-white mix-drink">Mix Me a Drink!</h3>
+            {cocktail !== "All" ?
+              <button
+                className="btn text-white shadow-none"
+                onClick={() => { setCocktail("All") }}
+              >All Cocktails</button>
+              :
+              ""}
+          </div>
           <Leftbar />
-          <Main />
+          {cocktail === "All" ? <AllCocktails /> : <Cocktail />}
         </div>
       </div>
     </div>
