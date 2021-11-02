@@ -36,7 +36,7 @@ export default function CocktailApp() {
               :
               ""}
           </div>
-          <div className="d-flex">
+          <div className="d-flex flex-wrap">
             <Leftbar />
             {cocktail === "All" ? <AllCocktails /> : <Cocktail />}
           </div>
