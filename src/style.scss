@@ -1,15 +1,15 @@
 .cocktail-app {
   background: url("./data/images/bg.jpg") no-repeat fixed;
 
+  // SCROLLBAR
+  ::-webkit-scrollbar { width: 7px; }
+  ::-webkit-scrollbar-track { background: #444; }
+  ::-webkit-scrollbar-thumb { background: #bbb; border-radius: 25px; }
+
   .cocktail-form {
     backdrop-filter: blur(3px);
 
     .mix-drink { text-shadow: 4px -1px 8px red; }
-
-    // SCROLLBAR
-    ::-webkit-scrollbar { width: 7px; }
-    ::-webkit-scrollbar-track { background: #444; }
-    ::-webkit-scrollbar-thumb { background: #bbb; border-radius: 25px; }
 
     .cocktails {
       .cocktail-name {

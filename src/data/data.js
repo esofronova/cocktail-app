@@ -157,7 +157,7 @@ export const cocktails = [
         amount: '1 oz'
       },
       {
-        name: 'Tomaro Juice',
+        name: 'Tomato Juice',
         amount: '2 oz'
       },
       {

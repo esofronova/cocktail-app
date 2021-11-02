@@ -8,7 +8,7 @@ export default function AllCocktails() {
         return (
           <div
             key={index}
-            className={"col-6 col-lg-4"}
+            className="col-12 col-sm-6 col-lg-4"
           >
             <div className="m-3 position-relative rounded overflow-hidden">
               <img src={item.img} className="w-100 h-100 of-cover" alt={item.name} />
