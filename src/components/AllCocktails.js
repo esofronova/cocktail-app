@@ -14,7 +14,7 @@ export default function AllCocktails() {
               <img src={item.img} className="w-100 h-100 of-cover" alt={item.name} />
               <div
                 className="text-center text-white text-uppercase fw-bold position-absolute w-100 h-100 centered p-4 cocktail-name"
-                onClick={() => { setCocktail(item); setAlc('All') }}
+                onClick={() => { setCocktail(item.name); setAlc('All') }}
               >{item.name}</div>
             </div>
           </div>

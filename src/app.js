@@ -1,20 +1,20 @@
-import './style.scss';
-import { cocktails } from './data/data';
-import { useState } from 'react';
-import Leftbar from './components/Leftbar';
-import AllCocktails from './components/AllCocktails';
-import Cocktail from './components/Cocktail';
-import { ArrowReturnLeft } from 'react-bootstrap-icons';
-import { Col, Container, Row } from 'react-bootstrap';
+import "./style.scss";
+import { cocktails } from "./data/data";
+import { useState } from "react";
+import Leftbar from "./components/Leftbar";
+import AllCocktails from "./components/AllCocktails";
+import Cocktail from "./components/Cocktail";
+import { ArrowReturnLeft } from "react-bootstrap-icons";
+import { Col, Container, Row } from "react-bootstrap";
 
 export let cocktail, setCocktail, alc, setAlc, drinksByAlc;
 
 export default function CocktailApp() {
 
-  [cocktail, setCocktail] = useState('All');
-  [alc, setAlc] = useState('All');
+  [cocktail, setCocktail] = useState("All");
+  [alc, setAlc] = useState("All");
 
-  drinksByAlc = alc === 'All' ? [...cocktails] : [];
+  drinksByAlc = alc === "All" ? [...cocktails] : [];
   cocktails.forEach((item) => {
     item.ingredients.forEach((liquor) => {
       if (liquor.name === alc) {
@@ -22,8 +22,6 @@ export default function CocktailApp() {
       };
     });
   });
-
-  console.log(cocktail);
 
   return (
     <div className="cocktail-app bg-cover py-sm-3 h-100">
@@ -44,7 +42,7 @@ export default function CocktailApp() {
               <Leftbar />
             </Col>
             <Col xs={12} md={8} className="h-50 h-md-100 overflow-auto">
-              {cocktail === "All" ? <AllCocktails /> : <Cocktail />}
+              {cocktail === "All" ? <AllCocktails /> : <Cocktail name={cocktail} />}
             </Col>
           </Row>
         </div>
